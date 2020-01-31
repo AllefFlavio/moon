@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "JRE MMA Show #75 with Dan Hardy",
+    "author": "JoeRogan",
+    "description": "Joe is joined by former welterweight fighter and UFC commentator, Dan Hardy.",
+    "likes": 84,
+    "listened": 96,
+    "percent_loaded": 48,
+    "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/The_Joe_Rogan_Experience_logo.jpg/220px-The_Joe_Rogan_Experience_logo.jpg"
+  },
+  {
+    "id": 2,
+    "title": "MFM Minisode 13",
+    "author": "myfavoritemurder",
+    "description": "This week's hometowns include serial killer connections and an acid trip discovery.",
+    "likes": 43,
+    "listened": 87,
+    "percent_loaded": 79,
+    "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSVGn6MXWAN_G5Mfi39R1kBw_NaxjVZutUTpUA2dfHH3X7B8bkS"
+  },
+  {
+    "id": 3,
+    "title": "JRE MMA Show #75 with Dan Hardy",
+    "author": "JoeRogan",
+    "description": "Joe is joined by former welterweight fighter and UFC commentator, Dan Hardy.",
+    "likes": 84,
+    "listened": 96,
+    "percent_loaded": 48,
+    "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/The_Joe_Rogan_Experience_logo.jpg/220px-The_Joe_Rogan_Experience_logo.jpg"
+  }
+]
