@@ -28,6 +28,7 @@ export default function Home({ history }) {
       <Helmet>
         <title>Jifcast | Playlist</title>
         <meta name="description" content="Here you found your playlists." />
+        <meta name="keywords" content="jifcast, playlist, podcast, jifcast-af, allefflavio, JIFCAST, jifcast-af, jifcast heroku" />
       </Helmet>
 
       <MenuBar onClickTitle={handleInnerPage} />

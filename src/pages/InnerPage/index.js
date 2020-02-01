@@ -19,6 +19,7 @@ export default function InnerPage({ history }) {
       <Helmet>
         <title>Jifcast | Description</title>
         <meta name="description" content="This is the description of page 2." />
+        <meta name="keywords" content="jifcast, description, podcast, jifcast-af, allefflavio, JIFCAST, jifcast-af, jifcast heroku" />
       </Helmet>
 
       <MenuBar onClickTitle={handleTitle} />
