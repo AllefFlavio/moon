@@ -1,5 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+
+import SEO from 'react-seo-component';
 
 import {
   Container,
@@ -15,22 +16,28 @@ export default function InnerPage({ history }) {
   }
 
   return (
-    <Container>
-      <Helmet>
-        <title>Jifcast | Description</title>
-        <meta name="description" content="This is the description of page 2." />
-        <meta name="keywords" content="jifcast, description, podcast, jifcast-af, allefflavio, JIFCAST, jifcast-af, jifcast heroku" />
-      </Helmet>
+    <SEO
+      title="Jifcast | This is page 2"
+      titleTemplate="Jifcast | Description"
+      description="This is the description of page 2."
+      pathname="https://jifcast-af.herokuapp.com/inner-page"
+      siteLanguage="pt"
+      siteLocale="pt-br"
+      author="AllefFlavio"
+      article={true}
+    >
+      <Container>
 
-      <MenuBar onClickTitle={handleTitle} />
+        <MenuBar onClickTitle={handleTitle} />
 
-      <ContentContainer className="container">
-        <Title>This is page 2</Title>
+        <ContentContainer className="container">
+          <Title>This is page 2</Title>
 
-        <p>
-          This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description.
-        </p>
-      </ContentContainer>
-    </Container>
+          <p>
+            This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description.
+          </p>
+        </ContentContainer>
+      </Container>
+    </SEO>
   );
 }
