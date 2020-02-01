@@ -30,7 +30,7 @@ export default function MediaItem({ media }) {
     <Container>
       <Link to={media.url}>
         <ImageContainer>
-          <Image src={media.img_url} />
+          <Image src={media.img_url} alt={media.author} />
 
           <ImageForeground>
             <FontAwesomeIcon icon={faPlay} color='white' size='2x'/>
