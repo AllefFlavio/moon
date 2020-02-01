@@ -7,7 +7,8 @@
     "likes": 84,
     "listened": 96,
     "percent_loaded": 48,
-    "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/The_Joe_Rogan_Experience_logo.jpg/220px-The_Joe_Rogan_Experience_logo.jpg"
+    "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/The_Joe_Rogan_Experience_logo.jpg/220px-The_Joe_Rogan_Experience_logo.jpg",
+    "url": "https://www.google.com"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "likes": 43,
     "listened": 87,
     "percent_loaded": 79,
-    "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSVGn6MXWAN_G5Mfi39R1kBw_NaxjVZutUTpUA2dfHH3X7B8bkS"
+    "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSVGn6MXWAN_G5Mfi39R1kBw_NaxjVZutUTpUA2dfHH3X7B8bkS",
+    "url": "https://www.yahoo.com"
   },
   {
     "id": 3,
@@ -27,6 +29,7 @@
     "likes": 84,
     "listened": 96,
     "percent_loaded": 48,
-    "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/The_Joe_Rogan_Experience_logo.jpg/220px-The_Joe_Rogan_Experience_logo.jpg"
+    "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/The_Joe_Rogan_Experience_logo.jpg/220px-The_Joe_Rogan_Experience_logo.jpg",
+    "url": "https://www.amazon.com"
   }
 ]

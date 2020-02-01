@@ -19,7 +19,7 @@ export default function Home({ history }) {
 
   function handleMedia(media) {
     return () => {
-      handleInnerPage();
+      window.open(media.url);
     };
   }
 
@@ -30,7 +30,7 @@ export default function Home({ history }) {
         <meta name="description" content="Here you found your playlists." />
       </Helmet>
 
-      <MenuBar />
+      <MenuBar onClickTitle={handleInnerPage} />
 
       <PlaylistContainer className='container'>
         <Title>Playlists</Title>
