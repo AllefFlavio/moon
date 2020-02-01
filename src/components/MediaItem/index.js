@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faCloudDownloadAlt, faHeadphonesAlt, faPlay } from '@fortawesome/free-solid-svg-icons'
 
@@ -28,7 +27,7 @@ export default function MediaItem({ media }) {
   
   return (
     <Container>
-      <Link to={media.url}>
+      <a href={media.url}>
         <ImageContainer>
           <Image src={media.img_url} alt={media.author} />
 
@@ -36,7 +35,7 @@ export default function MediaItem({ media }) {
             <FontAwesomeIcon icon={faPlay} color='white' size='2x'/>
           </ImageForeground>
         </ImageContainer>
-      </Link>
+      </a>
       <ContentContainer>
         <Author>{media.author}</Author>
         <Title>{media.title}</Title>
