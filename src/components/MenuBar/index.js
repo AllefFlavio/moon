@@ -12,7 +12,13 @@ import {
   Content,
 } from './styles';
 
-export default function MenuBar() {
+export default function MenuBar({
+  onClickTitle,
+  onClickRefresh,
+  onClickDiscover,
+  onClickNotifications,
+  onClickUser,
+}) {
   const color = '#5EA198';
 
   const userImageURL = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQrVlCvgSPl6pMW9xnmcASQA9QNmJAkXIPETxOC7ZQBU2SIoyRC';
@@ -20,28 +26,28 @@ export default function MenuBar() {
   return (
     <Container>
       <Content className="container">
-        <Title>jifcast</Title>
+        <Title onClick={onClickTitle}>jifcast</Title>
 
         <LinksContainer>
-          <Link>
+          <Link onClick={onClickRefresh}>
             <FontAwesomeIcon icon={faSync} color={color} size='lg'/>
 
             <LinkText>refresh</LinkText>
           </Link>
 
-          <Link>
+          <Link onClick={onClickDiscover}>
             <FontAwesomeIcon icon={faMicrophoneAlt} color={color} size='lg'/>
 
             <LinkText>discover</LinkText>
           </Link>
 
-          <Link>
+          <Link onClick={onClickNotifications}>
             <FontAwesomeIcon icon={faHeadphonesAlt} color={color} size='lg'/>
 
             <LinkText>notifications</LinkText>
           </Link>
 
-          <Link>
+          <Link onClick={onClickUser}>
             <ProfileImage src={userImageURL} alt='profile image'/>
 
             <LinkText>username</LinkText>

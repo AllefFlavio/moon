@@ -16,6 +16,7 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.p`
+  cursor: pointer;
   font-size: 11pt;
   font-weight: bold;
   margin: 0px;

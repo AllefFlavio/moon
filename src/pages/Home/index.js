@@ -1,4 +1,6 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+
 import mediaData from '../../assets/media.json';
 
 import { MenuBar, MediaItem } from '../../components';
@@ -17,12 +19,17 @@ export default function Home({ history }) {
 
   function handleMedia(media) {
     return () => {
-      console.log('Play >', media.title, 'from', media.author);
+      handleInnerPage();
     };
   }
 
   return (
     <Container>
+      <Helmet>
+        <title>Jifcast | Playlist</title>
+        <meta name="description" content="Here you found your playlists." />
+      </Helmet>
+
       <MenuBar />
 
       <PlaylistContainer className='container'>

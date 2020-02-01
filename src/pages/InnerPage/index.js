@@ -1,9 +1,35 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
-export default function InnerPage() {
+import {
+  Container,
+  ContentContainer,
+  Title,
+} from './styles';
+import { MenuBar } from '../../components';
+
+export default function InnerPage({ history }) {
+
+  function handleTitle() {
+    history.push('/index');
+  }
+
   return (
-    <div>
-      <h1>Hello inner page</h1>
-    </div>
+    <Container>
+      <Helmet>
+        <title>Jifcast | Description</title>
+        <meta name="description" content="This is the description of page 2." />
+      </Helmet>
+
+      <MenuBar onClickTitle={handleTitle} />
+
+      <ContentContainer className="container">
+        <Title>This is page 2</Title>
+
+        <p>
+          This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description. This is page 2 description.
+        </p>
+      </ContentContainer>
+    </Container>
   );
 }
