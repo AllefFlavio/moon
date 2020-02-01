@@ -17,12 +17,6 @@ export default function Home({ history }) {
     history.push('/inner-page');
   }
 
-  function handleMedia(media) {
-    return () => {
-      window.open(media.url);
-    };
-  }
-
   return (
     <Container>
       <Helmet>
@@ -42,7 +36,6 @@ export default function Home({ history }) {
           <MediaItem
             key={index}
             media={media}
-            onClick={handleMedia(media)}
           />
         ))}
         
