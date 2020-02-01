@@ -13,10 +13,6 @@ import {
 
 export default function Home({ history }) {
 
-  function handleInnerPage() {
-    history.push('/inner-page');
-  }
-
   return (
     <Container>
       <Helmet>
@@ -25,7 +21,7 @@ export default function Home({ history }) {
         <meta name="keywords" content="jifcast, playlist, podcast, jifcast-af, allefflavio, JIFCAST, jifcast-af, jifcast heroku" />
       </Helmet>
 
-      <MenuBar onClickTitle={handleInnerPage} />
+      <MenuBar />
 
       <PlaylistContainer className='container'>
         <Title>Playlists</Title>

@@ -2,6 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSync, faMicrophoneAlt, faHeadphonesAlt } from '@fortawesome/free-solid-svg-icons'
 
+import { Link as LinkRouter } from 'react-router-dom';
+
 import {
   Container,
   Title,
@@ -13,7 +15,6 @@ import {
 } from './styles';
 
 export default function MenuBar({
-  onClickTitle,
   onClickRefresh,
   onClickDiscover,
   onClickNotifications,
@@ -26,7 +27,10 @@ export default function MenuBar({
   return (
     <Container>
       <Content className="container">
-        <Title onClick={onClickTitle}>jifcast</Title>
+
+        <LinkRouter to="/inner-page">
+          <Title >jifcast</Title>
+        </LinkRouter>
 
         <LinksContainer>
           <Link onClick={onClickRefresh}>
