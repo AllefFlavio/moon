@@ -1,6 +1,5 @@
 import React from 'react';
-
-import SEO from 'react-seo-component';
+import { Helmet } from 'react-helmet';
 
 import mediaData from '../../assets/media.json';
 
@@ -15,32 +14,28 @@ import {
 export default function Home({ history }) {
 
   return (
-    <SEO 
-      title="Jifcast | Playlist"
-      pageTitle="Jifcast | Playlist"
-      description="Here you found your playlists."
-      pathname="https://jifcast-af.herokuapp.com/"
-      siteLanguage="pt"
-      siteLocale="pt-br"
-    >
-      <Container>
+    <Container>
+      <Helmet>
+        <title>Jifcast | Playlist</title>
+        <meta name="description" content="Here you found your playlists." />
+        <meta name="keywords" content="jifcast, playlist, podcast, jifcast-af, allefflavio, JIFCAST, jifcast-af, jifcast heroku" />
+      </Helmet>
 
-        <MenuBar />
+      <MenuBar />
 
-        <PlaylistContainer className='container'>
-          <Title>Playlists</Title>
+      <PlaylistContainer className='container'>
+        <Title>Playlists</Title>
 
-          <Line />
+        <Line />
 
-          {mediaData.map((media, index) => (
-            <MediaItem
-              key={index}
-              media={media}
-            />
-          ))}
-          
-        </PlaylistContainer>
-      </Container>
-    </SEO>
+        {mediaData.map((media, index) => (
+          <MediaItem
+            key={index}
+            media={media}
+          />
+        ))}
+        
+      </PlaylistContainer>
+    </Container>
   );
 }
