@@ -105,11 +105,19 @@ export const DataContent = styled.div`
 
 export const ButtonsContainer = styled.div`
   display: flex;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const Button = styled.a`
   cursor: pointer;
   margin-right: 40px;
+
+  @media (max-width: 768px) {
+    margin-right: 20px;
+  }
 `;
 
 export const ButtonText = styled.span`
