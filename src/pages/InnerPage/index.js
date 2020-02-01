@@ -20,6 +20,8 @@ export default function InnerPage({ history }) {
         <title>Jifcast | Description</title>
         <meta name="description" content="This is the description of page 2." />
         <meta name="keywords" content="jifcast, description, podcast, jifcast-af, allefflavio, JIFCAST, jifcast-af, jifcast heroku" />
+        <link rel="canonical" href="https://jifcast-af.herokuapp.com/inner-page" />
+
       </Helmet>
 
       <MenuBar onClickTitle={handleTitle} />

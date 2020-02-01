@@ -19,6 +19,7 @@ export default function Home({ history }) {
         <title>Jifcast | Playlist</title>
         <meta name="description" content="Here you found your playlists." />
         <meta name="keywords" content="jifcast, playlist, podcast, jifcast-af, allefflavio, JIFCAST, jifcast-af, jifcast heroku" />
+        <link rel="canonical" href="https://jifcast-af.herokuapp.com/" />
       </Helmet>
 
       <MenuBar />
